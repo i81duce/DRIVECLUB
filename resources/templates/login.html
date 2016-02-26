@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="header">DRIVECLUB</div><br>
+
+<div class="login"/>
+<form action="/login" method="post">
+    <input type="text" placeholder="Username" name="loginName"/><br>
+    <input type="password" placeholder="Password" name="loginPassword"/><br>
+    <button type="submit">Login</button>
+</form>
+</div>
+<br/>
+
+<div class="results">
+    <ol>
+        {{#events}}
+        <li>
+            {{onlineId}} | {{trackName}} | {{car}} | {{time}}<br>
+        </li>
+        {{/events}}
+    </ol>
+</div>
+
+</body>
+</html>

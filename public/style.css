@@ -1,0 +1,50 @@
+.login {
+    padding-top: 5px;
+    text-align: center;
+    background-color: #ef2d38;
+}
+
+.welcome {
+    margin-top: 13px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #ef2d38;
+}
+
+.logout {
+    text-align: center;
+}
+
+p1 {
+    color: white;
+    font-family: Impact;
+}
+
+.header {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-family: Impact;
+    padding-top: px;
+    background-image: url("http://www.fatalhero.com/wp-content/uploads/2015/06/driveclubthumb.jpg");
+}
+
+.choice {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.results {
+    font-family: Arial Rounded MT Bold;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    text-color: white;
+    color: #ef2d38;
+}
+
+a:hover {
+    background-color: #ef2d38;
+    color: white;
+}
