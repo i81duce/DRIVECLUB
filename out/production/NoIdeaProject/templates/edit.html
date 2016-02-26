@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="header">DRIVECLUB</div>
+{{#butts}}
+<div class="welcome"><p1>Welcome, {{name}}</p1></div>
+{{/butts}}
+
+{{#editEvent}}
+<div class="choice">
+    <form action="/edit-event" method="post">
+        <input type="hidden" name="id" value="{{id}}"/>
+        <select name="trackName">
+            <option selected disabled>Track</option>
+            <option value="High Point">High Point</option> <!--Creates dropdown menu-->
+            <option value="Suchazii Raceway">Suchazii Raceway</option>
+            <option value="Ridgeline Park">Ridgeline Park</option>
+            <option value="Luna Hills">Luna Hills</option>
+            <option value="Nürburgring">Nürburgring</option>
+        </select>
+        <br>
+        <input type="text" placeholder="Car" name="carName"/><br>
+        <input type="text" placeholder="Time" name="time"/><br>
+        <button type="submit">Update</button>
+    </form>
+</div>
+{{/editEvent}}
+<br>
+
+
+
+<div class="logout">
+    <form action="/logout" method="post">
+        <button type="submit">Logout</button>
+    </form>
+</div>
